@@ -1,0 +1,96 @@
+h2 {
+    color: rgb(21, 138, 21);
+    text-shadow: 2px 2px 5px lime;
+    border: 3px solid black;
+    border-bottom: 3px solid black;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    width: fit-content;
+}
+body {
+    background-color: azure;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+
+    opacity: 0;
+    transition: opacity 4.5s;
+}
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+table {
+    border: 2px solid green;
+    border-radius: 5px;
+    border-bottom: 2px double green;
+    width: 50%;
+}
+th {
+    border: 2px solid rgb(72, 206, 54);
+    border-radius: 5px;
+    padding: 8px 8px;
+    table-layout: inherit;
+}
+td {
+    border: 2px solid  indigo;
+    border-radius: 5px;
+    padding: 8px 8px;
+    width: 50%;
+}
+#D1A {
+    text-align: center;
+    background-color: lightgreen;
+}
+#H1A {
+    text-align: center;
+}
+section {
+  margin-left: 90%;
+}
+button {
+    width: 150px;
+    height: 30px;
+    border: 5px solid midnightblue
+    padding 10px;
+}
+button:hover {
+    background-color: lightskyblue;
+}
+.Container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.Cartao{
+    width: auto;
+}
+*::-webkit-scrollbar {
+    width: 13px;
+}
+*::-webkit-scrollbar-track {
+    background: rgb(10, 139, 10);
+}
+*::-webkit-scrollbar-thumb {
+    background-color: midnightblue;
+}
+section {
+    margin-left: auto;
+}
+#Cidadespolo {
+    text-align: center;
+}
+button {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    width: 100%;
+}
+button:hover {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+}
