@@ -5,8 +5,8 @@ Aluno 1: Pedro Henrique Pavani Cesare
 Aluno 2: Pedro Martelo
 """
 
-from random import randint
 import random
+from random import randint
 
 while True:
     numero_secreto = random.randint(1, 100)
@@ -29,16 +29,27 @@ while True:
             print("Acabaram suas chances!")
             break
         numero = int(input("Digite um número entre 1 e 100."))
-        if numero is not numero_secreto:
-            print(f"Você errou, você tem mais {tentativas_maximas-tentativas} tentativas!")
-            tentativas += 1
-        else:
-            print(f"Você acertou, sua pontuação foi de {pontuacao} pontos!")
-            break
+    else:
+        print(f"Você acertou, sua pontuação foi de {pontuacao} pontos!")
+
+    
+        # Calcular a pontuação conforme as tentativas usadas.
+        pontuacao = tentativas_maximas - tentativas
+    
+        # Adicionar validação para evitar erros (ex: palpite fora do intervalo 1–100).
+        
+        if tentativa < numero_minimo or tentativa > numero_maximo:
+            print(f"Número inválido! Digite um número entre {numero_minimo} e {numero_maximo}")
+    
+        elif tentativa < numero_secreto:
+            print("O número é maior!")
+    
+        elif tentativa > numero_secreto:
+            print("O número é menor!")
 
     # Calcular a pontuação conforme as tentativas usadas.
 
-    (tentativas_maximas - tentativas) == pontuacao
+    pontuacao = tentativas_maximas - tentativas
 
     # Adicionar validação para evitar erros (ex: palpite fora do intervalo 1–100).
 
