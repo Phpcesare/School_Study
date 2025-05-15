@@ -1,0 +1,104 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="shortcut icon" href="assets/profile.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="nav-container">
+                <div class="logo">Portfólio</div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">Sobre mim</a></li>
+                    <li><a href="#projects" class="nav-link">Projetos</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
+                </ul>
+                <button id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="full-height">
+            <canvas id="particles"></canvas>
+            <div class="hero-content">
+                <h1>Pavani</h1>
+                <h2>Aluno do DS</h2>
+                <p class="tagline">Aluno do DS, aprendendo a programar!</p>
+                <a href="#about" class="cta-button">Saiba mais</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>Sobre mim</h2>
+                <div class="aboutabout-content">
+                    <div class="profile-pic">
+                        <div class="circle-frame"></div>
+                    </div>
+                    <div class="about-texts">
+                        <p class="bio-text">Eu gosto de programar, conversar e sair com meus amigos, também gosto de jogar os mais 
+                            diversos jogos com meus amigos.</p>
+                    </div>
+                    <div class="skills-grid"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Meus projetos</h2>
+                <div class="projects-grid"></div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contato</h2>
+                <div class="contact-content">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder="Seu nome">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder="Seu email">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required placeholder="Sua mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar mensagem</button>
+                    </form>
+                    <div class="social-links">
+                        <h3>Se conecte comigo</h3>
+                        <div class="social-icons">
+                            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Feito com ❤ por Sam Bispo.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
