@@ -44,20 +44,23 @@ def vogal (palavra):
     return sum(1 for char in palavra if char in vogal)
 
 #exercício 6 - crie umas listas ae e bota uns bgl ae
-lista_nome = []
-lista_idade = []
-lista_telefone = []
-while True:
-    nome = input("Digite seu nome: ")
-    idade = int(input("Digite sua idade: "))
-    telefone = input("Digite seu telefone: ")
-    if not lista_nome or not lista_idade or not lista_telefone:
-        print("Erro: Nome, idade ou telefone não podem ser nulos.")
-        continue
-    lista_nome.append(nome)
-    lista_idade.append(idade)
-    lista_telefone.append(telefone)
-    print("Informações cadastradas:")
-    if input("Deseja sair? (s/n)") == 's':
-        break
-#continuação do exercício 6 - Adicione uma verificação se o nome, idade e telefone que a pessoa digitou não é nulo
+def cadastrar_informacoes():
+    lista_nome = []
+    lista_idade = []
+    lista_telefone = []
+    while True:
+        nome = input("Digite seu nome: ")
+        idade = int(input("Digite sua idade: "))
+        telefone = input("Digite seu telefone: ")
+        if not nome or not idade or not telefone:
+            print("Erro: Nome, idade ou telefone não podem ser nulos.")
+            continue
+        lista_nome.append(nome)
+        lista_idade.append(idade)
+        lista_telefone.append(telefone)
+        print("Informações cadastradas:")
+        if input("Deseja sair? (s/n)") == 's':
+            break
+
+cadastrar_informacoes()
+#exercício 6 - Transformar o código em uma função
